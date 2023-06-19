@@ -47,6 +47,7 @@ public abstract class MixinClientPlayerInteractionManager
         }
     }
 
+    // TODO: Broken with Forge,try to fix it with EVENT_BUS later
     @Inject(method = "method_41929",
             slice = @Slice(from = @At(value = "INVOKE",
                                       target = "Lnet/minecraft/item/ItemStack;use(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/PlayerEntity;Lnet/minecraft/util/Hand;)Lnet/minecraft/util/TypedActionResult;")),
